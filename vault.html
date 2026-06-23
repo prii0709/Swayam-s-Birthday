@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Favorite Human File</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:#000;
+color:white;
+
+height:100vh;
+
+overflow:hidden;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+position:relative;
+
+}
+
+/* GLOW */
+
+.glow{
+
+position:absolute;
+
+width:700px;
+height:700px;
+
+background:#d4af37;
+
+border-radius:50%;
+
+filter:blur(250px);
+
+opacity:.08;
+
+animation:moveGlow 10s ease-in-out infinite;
+
+}
+
+@keyframes moveGlow{
+
+0%{
+transform:translate(-150px,-100px);
+}
+
+50%{
+transform:translate(150px,100px);
+}
+
+100%{
+transform:translate(-150px,-100px);
+}
+
+}
+
+/* ACCESS SCREEN */
+
+.access{
+
+text-align:center;
+
+animation:fadeIn 1s ease;
+
+}
+
+.access h1{
+
+font-size:3rem;
+
+letter-spacing:8px;
+
+color:#d4af37;
+
+}
+
+.access p{
+
+margin-top:20px;
+
+font-size:1rem;
+
+color:#aaa;
+
+}
+
+/* FILE CARD */
+
+.file-card{
+
+display:none;
+
+width:90%;
+max-width:750px;
+
+background:
+rgba(255,255,255,.03);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(212,175,55,.2);
+
+border-radius:25px;
+
+padding:40px;
+
+box-shadow:
+0 0 40px rgba(212,175,55,.1);
+
+animation:fadeUp 1.5s ease;
+
+}
+
+.file-title{
+
+font-size:2rem;
+
+font-weight:700;
+
+color:#d4af37;
+
+margin-bottom:35px;
+
+text-align:center;
+
+}
+
+.row{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:15px 0;
+
+border-bottom:
+1px solid rgba(255,255,255,.08);
+
+}
+
+.label{
+
+color:#aaa;
+
+}
+
+.value{
+
+font-weight:600;
+
+}
+
+.final-line{
+
+margin-top:35px;
+
+text-align:center;
+
+font-size:1.3rem;
+
+line-height:2;
+
+color:#fff;
+
+}
+
+.btn{
+
+margin-top:35px;
+
+display:block;
+
+margin-left:auto;
+margin-right:auto;
+
+padding:16px 35px;
+
+border:none;
+
+border-radius:15px;
+
+background:#d4af37;
+
+font-weight:700;
+
+cursor:pointer;
+
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+}
+
+to{
+opacity:1;
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@media(max-width:768px){
+
+.row{
+
+flex-direction:column;
+gap:5px;
+
+}
+
+.file-title{
+font-size:1.5rem;
+}
+
+.final-line{
+font-size:1rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="glow"></div>
+
+<div class="access" id="access">
+
+<h1>ACCESS GRANTED</h1>
+
+<p>Loading Favorite Human File...</p>
+
+</div>
+
+<div class="file-card" id="fileCard">
+
+<div class="file-title">
+
+FAVORITE HUMAN DOSSIER ❤️
+
+</div>
+
+<div class="row">
+<div class="label">Name</div>
+<div class="value">Swayam</div>
+</div>
+
+<div class="row">
+<div class="label">Nickname</div>
+<div class="value">Bebu</div>
+</div>
+
+<div class="row">
+<div class="label">Special Ability</div>
+<div class="value">Making Priyal Smile Instantly</div>
+</div>
+
+<div class="row">
+<div class="label">Danger Level</div>
+<div class="value">Steals Priyal's heart daily❤️</div>
+</div>
+
+<div class="row">
+<div class="label">Status</div>
+<div class="value">Favorite Human❤️</div>
+</div>
+
+<div class="row">
+<div class="label">Mission</div>
+<div class="value">Have The Best Birthday Ever</div>
+</div>
+
+<div class="row">
+<div class="label">Result</div>
+<div class="value">SUCCESS ✓</div>
+</div>
+
+<div class="final-line">
+
+<p>Thank you for being one of the best things<p>
+<p>that ever happened to me.<p>
+
+
+</div>
+
+<button
+class="btn"
+onclick="location.href='final.html'">
+
+READ FINAL LETTER →
+
+</button>
+
+</div>
+
+<script>
+
+setTimeout(()=>{
+
+document.getElementById("access")
+.style.display="none";
+
+document.getElementById("fileCard")
+.style.display="block";
+
+},2500);
+
+</script>
+
+</body>
+</html>

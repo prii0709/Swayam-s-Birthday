@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/responsive.css">
+
+<title>Netflix Intro</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:black;
+overflow:hidden;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.logo{
+
+font-size:12rem;
+
+font-weight:900;
+
+font-family:Arial;
+
+color:#E50914;
+
+transform:scale(0);
+
+animation:netflix 4s forwards;
+
+text-shadow:
+0 0 30px #E50914,
+0 0 80px #E50914;
+
+}
+
+@keyframes netflix{
+
+0%{
+transform:scale(0);
+opacity:0;
+}
+
+30%{
+transform:scale(1.2);
+opacity:1;
+}
+
+60%{
+transform:scale(1);
+}
+
+100%{
+transform:scale(1.5);
+opacity:0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 class="logo">
+S
+</h1>
+
+<script>
+
+setTimeout(()=>{
+
+window.location.href=
+"profiles.html";
+
+},4000);
+
+</script>
+
+</body>
+
+</html>

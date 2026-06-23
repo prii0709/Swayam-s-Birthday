@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Who's Watching?</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+
+background:#141414;
+color:white;
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.netflix{
+
+position:absolute;
+
+top:30px;
+left:40px;
+
+color:#E50914;
+
+font-size:2rem;
+font-weight:bold;
+
+}
+
+.container{
+
+text-align:center;
+
+}
+
+h1{
+
+margin-bottom:60px;
+
+font-size:3rem;
+
+}
+
+.profiles{
+
+display:flex;
+
+gap:40px;
+
+}
+
+.profile{
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.profile:hover{
+
+transform:scale(1.1);
+
+}
+
+.profile img{
+
+width:180px;
+height:180px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+}
+
+.profile p{
+
+margin-top:15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="netflix">
+SWAYUFLIX
+</div>
+
+<div class="container">
+
+<h1>
+Who's Watching?
+</h1>
+
+<div class="profiles">
+
+<div class="profile"
+onclick="location.href='memory1.html'">
+
+<img src="images/profile1.jpg">
+
+<p>
+The Boy I Met
+</p>
+
+</div>
+
+<div class="profile"
+onclick="location.href='memory2.html'">
+
+<img src="images/profile2.jpg">
+
+<p>
+My Safe Place
+</p>
+
+</div>
+
+<div class="profile"
+onclick="location.href='memory3.html'">
+
+<img src="images/profile3.jpg">
+
+<p>
+Favorite Human
+</p>
+
+</div>
+
+<div class="profile"
+onclick="location.href='birthday.html'">
+
+<img src="images/profile4.jpg">
+
+<p>
+Birthday Boy 🎂
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

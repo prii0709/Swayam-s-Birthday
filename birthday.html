@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Swayam ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+height:100vh;
+overflow:hidden;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+position:relative;
+
+background:black;
+color:white;
+
+}
+
+/* BACKGROUND IMAGE */
+
+.bg-image{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:
+url("images/us.jpg");
+
+background-size:cover;
+background-position:center;
+
+filter:
+brightness(.18)
+blur(10px);
+
+transform:scale(1.15);
+
+z-index:-3;
+
+animation:
+zoomBackground 18s ease-in-out infinite alternate;
+
+}
+
+@keyframes zoomBackground{
+
+from{
+transform:scale(1.05);
+}
+
+to{
+transform:scale(1.15);
+}
+
+}
+
+/* OVERLAY */
+
+.overlay{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:
+linear-gradient(
+180deg,
+rgba(0,0,0,.55),
+rgba(0,0,0,.85)
+);
+
+z-index:-2;
+
+}
+
+/* GOLD GLOW */
+
+.glow{
+
+position:absolute;
+
+width:700px;
+height:700px;
+
+background:#d4af37;
+
+border-radius:50%;
+
+filter:blur(250px);
+
+opacity:.08;
+
+animation:
+glowMove 12s ease-in-out infinite;
+
+}
+
+@keyframes glowMove{
+
+0%{
+transform:translate(-150px,-100px);
+}
+
+50%{
+transform:translate(150px,100px);
+}
+
+100%{
+transform:translate(-150px,-100px);
+}
+
+}
+
+/* CONTENT */
+
+.container{
+
+text-align:center;
+
+position:relative;
+z-index:5;
+
+width:90%;
+max-width:1000px;
+
+animation:
+fadeUp 2s ease;
+
+}
+
+/* TOP TEXT */
+
+.small-title{
+
+font-size:1rem;
+
+letter-spacing:6px;
+
+line-height:2;
+
+color:#d6d6d6;
+
+}
+
+/* GOLD LINE */
+
+.line{
+
+width:250px;
+height:1px;
+
+margin:25px auto;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+#d4af37,
+transparent
+);
+
+}
+
+/* NAME */
+
+.name{
+
+font-size:7rem;
+
+font-weight:800;
+
+letter-spacing:8px;
+
+background:
+linear-gradient(
+90deg,
+#d4af37,
+#fff3b0,
+#d4af37
+);
+
+background-size:300%;
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+animation:
+shine 6s linear infinite;
+
+}
+
+@keyframes shine{
+
+0%{
+background-position:-100%;
+}
+
+100%{
+background-position:200%;
+}
+
+}
+
+/* NICKNAME */
+
+.nickname{
+
+margin-top:20px;
+
+font-size:1.8rem;
+
+color:#d4af37;
+
+height:50px;
+
+transition:.4s;
+
+}
+
+/* BIRTHDAY TEXT */
+
+.birthday{
+
+margin-top:15px;
+
+font-size:1.3rem;
+
+font-weight:300;
+
+letter-spacing:2px;
+
+}
+
+/* BUTTON */
+
+.btn{
+
+margin-top:45px;
+
+padding:18px 40px;
+
+background:#d4af37;
+
+border:none;
+
+border-radius:15px;
+
+cursor:pointer;
+
+font-weight:700;
+
+font-size:1rem;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+0 0 30px rgba(212,175,55,.4);
+
+}
+
+/* FADE */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.small-title{
+font-size:.8rem;
+letter-spacing:3px;
+}
+
+.name{
+font-size:3.5rem;
+letter-spacing:2px;
+}
+
+.nickname{
+font-size:1.2rem;
+}
+
+.birthday{
+font-size:1rem;
+}
+
+.btn{
+padding:15px 30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="bg-image"></div>
+
+<div class="overlay"></div>
+
+<div class="glow"></div>
+
+<div class="container">
+
+<div class="small-title">
+
+FOR THE BOY<br>
+WHO BECAME<br>
+MY FAVORITE CHAPTER
+
+</div>
+
+<div class="line"></div>
+
+<div class="name">
+
+SWAYAM
+
+</div>
+
+<div class="line"></div>
+
+<div
+id="nickname"
+class="nickname">
+
+Bebu ❤️
+
+</div>
+
+<div class="birthday">
+
+Happy Birthday, My Favorite Human ❤️
+
+</div>
+
+<button
+class="btn"
+onclick="location.href='gift.html'">
+
+OPEN YOUR GIFT →
+
+</button>
+
+</div>
+
+<script>
+
+const nicknames=[
+
+"Bebu",
+"Sweetiepie",
+"Love",
+"Darling"
+
+];
+
+let index=0;
+
+const nickname=
+document.getElementById("nickname");
+
+setInterval(()=>{
+
+nickname.style.opacity=0;
+
+setTimeout(()=>{
+
+nickname.innerHTML=
+nicknames[index];
+
+nickname.style.opacity=1;
+
+index++;
+
+if(index>=nicknames.length){
+
+index=0;
+
+}
+
+},300);
+
+},2200);
+
+</script>
+
+</body>
+
+</html>

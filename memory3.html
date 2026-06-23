@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter III ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#000;
+height:100vh;
+overflow:hidden;
+position:relative;
+color:white;
+}
+
+.bg{
+position:absolute;
+inset:0;
+background:url("images/photo3.jpg") center center/cover no-repeat;
+filter:brightness(.18);
+transform:scale(1.05);
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:
+linear-gradient(
+to bottom,
+rgba(0,0,0,.75),
+rgba(0,0,0,.35),
+rgba(0,0,0,.85)
+);
+}
+
+.content{
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+text-align:center;
+
+width:90%;
+max-width:850px;
+
+animation:fadeUp 1.5s ease;
+
+}
+
+.chapter{
+
+color:#d4af37;
+
+letter-spacing:8px;
+
+font-size:.9rem;
+
+margin-bottom:20px;
+
+}
+
+.title{
+
+font-size:4rem;
+
+font-weight:700;
+
+margin-bottom:25px;
+
+}
+
+.line{
+
+width:120px;
+height:2px;
+
+background:#d4af37;
+
+margin:0 auto 30px;
+
+}
+
+.desc{
+
+font-size:1.15rem;
+
+line-height:2;
+
+color:#e5e5e5;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.btn{
+
+margin-top:45px;
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:15px;
+
+background:#d4af37;
+
+color:black;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 0 25px rgba(212,175,55,.4);
+
+}
+
+.memory-tag{
+
+position:absolute;
+
+top:40px;
+left:50%;
+
+transform:translateX(-50%);
+
+padding:8px 18px;
+
+border:1px solid rgba(212,175,55,.4);
+
+border-radius:30px;
+
+color:#d4af37;
+
+font-size:.8rem;
+
+letter-spacing:2px;
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:
+translate(-50%,-40%);
+}
+
+to{
+opacity:1;
+transform:
+translate(-50%,-50%);
+}
+
+}
+
+@media(max-width:768px){
+
+.title{
+font-size:2.4rem;
+}
+
+.desc{
+font-size:.95rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+
+
+<div class="content">
+
+<div class="chapter">
+CHAPTER III
+</div>
+
+<h1 class="title">
+Favorite Human ❤️
+</h1>
+
+<div class="line"></div>
+
+<p class="desc">
+
+Out of all the people in the world,
+somehow you became my favorite one.
+
+Not because you're perfect,
+but because being around you feels like home.
+
+Thank you for every laugh,
+every memory,
+every moment of comfort,
+and for being one of the best things that ever happened to me.
+
+</p>
+
+<button
+class="btn"
+onclick="location.href='birthday.html'">
+
+HAPPY BIRTHDAY → 🎂
+
+</button>
+
+</div>
+
+</body>
+
+</html>
